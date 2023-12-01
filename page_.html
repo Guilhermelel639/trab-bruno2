@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--CSS page-->
+    <link rel="stylesheet" href="CSS/page_.css">
+
+    <!--Icone Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container-fluid all-screen"> <!--Container de 100% da página-->
+      <section class="container-fluid screen-left"> <!--Section de 50% da página-->
+
+          <header class="container-fluid header-left"> <!--Header lado esquerdo-->
+            <button type="button" class="btn btn-primary button-load" id="atualizar">Atualizar<i class="bi bi-arrow-clockwise icon-load"></i></button>
+
+            <div class="dropdown"> <!--Botão editar-->
+              <button class="dropdown-toggle btn btn-primary edit-edi" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Editar</button>
+            
+              <ul class="dropdown-menu">
+                <input class="input-edit" id="idAtualizar" type="number" placeholder="Id">
+                <input class="input-edit" id="descAtualizar" type="text" placeholder="Descrição">
+                <input class="input-edit" id="precoAtualizar" type="number" placeholder="Preço">
+                <input class="input-edit" id="qtdAtualizar" type="number" placeholder="Quantidade">
+                <button class="btn btn-primary btn-bottom" id="btnAtualizarProduto">Atualizar</button>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropdown-toggle btn btn-primary edit-edi" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deletar</button>
+            
+              <ul class="dropdown-menu">
+                <input class="input-edit" type="number" placeholder="Id" id="idParaExcluir">
+                <button class="btn btn-primary btn-bottom" id="btnDelete">Excluir</button>
+                <button class="btn btn-primary btn-bottom" id="btnExcluirTodos">Excluir todos</button>
+              </ul>
+            </div>
+          </header>
+
+          <main class="container-fluid left-rest">
+            
+            <div class="container-fluid scroll-bar" id="main"> <!--Elementos que ira ficar conteudos-->
+                <form>
+                   <div id="lista-produtos"></div>
+                  </form>
+            </div>
+
+          </main>
+
+        </section>
+
+        <section class="container-fluid screen-right"> <!--Section de 50% da página-->
+
+          <main class="container-fluid left-rest">
+            
+            <div class="container-fluid border" id="main"> <!--Elementos que ira ficar conteudos-->
+              <input class="add-item" id="descricao" type="text" placeholder="Nome">
+              <input class="add-item" id="preco" type="number" placeholder="Preço">
+              <div class="cadastro">
+                <button type="button" class="btn btn-primary cad"> Cadastrar</button>
+              </div>
+            </div>
+
+          </main>
+
+        </section>
+      </div>
+
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--JS script-->
+    <script src="JS/script.js"></script>
+</body>
+</html>

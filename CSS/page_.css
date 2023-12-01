@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: none;
+}
+html, body{
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+.all-screen{ /*Class da tela inteira*/
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.screen-left{ /*Class lado esquerdo*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.screen-right{ /*Class lado direito*/
+    width: 50%;
+    background: #e84646;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#main{ /*Id do conteudo principal*/
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 80%;
+}
+.input-contud{ 
+    height: 5rem;
+    
+}
+.scroll-bar{ /*Define quantidade de elementos-max*/
+    max-height: 80%;
+    overflow-y: auto;
+    border: 0.1rem solid #CCC;
+    padding: 5%;
+}
+.header-left{ /*Class Header/esquerdo*/
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.left-rest{ /*Class screen-left - Header*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-rest{ /*Class screen-right - Header*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-load{ /*Class Imagem <i>*/
+    margin-left: 20%;
+}
+.button-load{ /*Class botão atualizar*/
+    font-size: 1.6rem;
+    width: 10rem;
+    height: 4.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+}
+.edit-edi{ /*Botão editar*/
+    width: 8rem;
+    height: 4.15rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    border: none;
+}
+.input-edit{   /* Id, Descrição, Preço, Quantidade*/
+    font-size: 1.5rem;
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 90%;
+}
+.btn-bottom{ /*Botão de atualizar*/
+    margin-top: 6%;
+    font-size: 1.5rem;
+    width: 80%;
+}
+.button{ /*Class botão voltar*/
+    width: 25%;
+    height: 60%;
+    float: right;
+}
+.add-item{
+    width: 75%;
+    height: 10%;
+    border-bottom: 0.3rem #fff solid;
+    font-size: 2rem;
+    color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+}
+#descricao::placeholder, #preco::placeholder{
+    color: white;
+}
+.cadastro{
+    width: 75%;
+    margin-top: 20%;
+    height: 30%;
+}
+.cad{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+}
